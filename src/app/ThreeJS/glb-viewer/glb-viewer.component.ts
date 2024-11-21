@@ -18,12 +18,6 @@ export class GlbViewerComponent implements AfterViewInit, OnDestroy {
   private scene: THREE.Scene | undefined;
   private camera: THREE.PerspectiveCamera | undefined;
   private controls: OrbitControls | undefined;
-  isSmallScreen = false;
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.isSmallScreen = event.target.innerWidth <= 768;
-  }
 
   constructor(private renderer2: Renderer2) { }
 
