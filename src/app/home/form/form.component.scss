@@ -1,0 +1,32 @@
+.containerForms{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+
+    > div:first-child{
+      width: 50%;
+    }
+
+    > form:nth-child(2){
+      width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .containerForms{
+        flex-direction: column;
+
+        > div:first-child{
+            width: 100%;
+            order: 1;
+        }
+
+        > form:nth-child(2){
+            width: 100%;
+            order: 2;
+        }
+    }
+
+}

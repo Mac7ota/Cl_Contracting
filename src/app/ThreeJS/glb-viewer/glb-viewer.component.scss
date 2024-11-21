@@ -1,0 +1,11 @@
+.glb-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .glb-move-left {
+    transform: translateX(-50px); /* Ajuste o valor conforme necessário */
+  }
+}

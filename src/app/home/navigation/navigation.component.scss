@@ -1,0 +1,12 @@
+.navbar {
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  border-bottom: 1px solid #00000026;
+
+  .titleLogo {
+    color: #3db1c0;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+}
