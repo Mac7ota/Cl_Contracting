@@ -1,6 +1,6 @@
 .containerSection {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-image: url('../../../../public/img/home-background.jpg');
   background-size: cover;
   background-color: rgb(99 99 99 / 47%);
@@ -15,6 +15,7 @@
     background-color: #f8f9fa;
     padding: 1.25rem 2.5rem; /* 20px 40px / 16 */
     animation: slideInFromLeft 1s ease-out;
+    border-radius: 3px;
 
     > h1 {
       font-weight: bold;

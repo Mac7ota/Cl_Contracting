@@ -5,10 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#home-section">Home</a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#form-section">Pricing</a>
-      <a class="nav-item nav-link" href="#footer-section">About</a>
+      <a class="nav-item nav-link active" href="#home-section" (click)="scrollToSection($event, 'home-section')">Home</a>
+      <a class="nav-item nav-link active" href="#services-section" (click)="scrollToSection($event, 'services-section')">Service</a>
+      <a class="nav-item nav-link active" href="#form-section" (click)="scrollToSection($event, 'form-section')">Pricing</a>
+      <a class="nav-item nav-link active" href="#footer-section" (click)="scrollToSection($event, 'footer-section')">About</a>
     </div>
   </div>
 </nav>

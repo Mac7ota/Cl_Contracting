@@ -1,11 +1,20 @@
 <div class="containerForms navbar-light bg-light" id="form-section">
 
-  <div style="overflow: hidden;">
-    <app-glb-viewer></app-glb-viewer>
+  <div *ngIf="is3DHouse" style="overflow: hidden;">
+    <app-glb-viewer ></app-glb-viewer>
   </div>
 
-  <form (ngSubmit)="onSubmit()">
+  <div class="containerIMG" *ngIf="isImg">
+    <img style="width: 80%;" src="img/depoimento.png"  />
+  </div>
+
+  <form (ngSubmit)="onSubmit($event)">
     <h2 class="text-center mb-5" style="font-family: 'Bebas Neue', sans-serif">Request Free Estimate</h2>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" [(ngModel)]="formData.name" name="name"
+        aria-describedby="nameHelp" placeholder="Enter your name">
+    </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" [(ngModel)]="formData.email" name="email"
@@ -14,8 +23,8 @@
     </div>
     <div class="mb-3">
       <label for="phone" class="form-label">Phone</label>
-      <input type="phone" class="form-control" id="phone" [(ngModel)]="formData.phone" name="phone"
-        placeholder="Enter your phone number">
+      <input type="text" class="form-control" id="phone" [(ngModel)]="formData.phone" name="phone"
+        placeholder="Enter your phone number" (input)="formatPhoneNumber($event)">
     </div>
     <div class="mb-3">
       <label for="address" class="form-label">Address</label>
@@ -24,14 +33,17 @@
     </div>
     <div class="mb-3">
       <label for="service" class="form-label">Service</label>
-      <input type="text" class="form-control" id="service" [(ngModel)]="formData.service" name="service"
-        placeholder="Enter the service">
-    </div>
-    <div class="mb-3">
-      <label for="detail" class="form-label">Detail the service</label>
-      <textarea class="form-control" id="detail" [(ngModel)]="formData.detail" name="detail" rows="3"
-        placeholder="Detail the service"></textarea>
+      <select class="form-control" id="service" [(ngModel)]="formData.service" name="service">
+        <option value="" disabled selected>Select a service</option>
+        <option value="cabinets">Cabinets</option>
+        <option value="decks">Decks</option>
+        <option value="paintings">Paintings</option>
+        <option value="sidings">Sidings</option>
+        <option value="stairs">Stairs</option>
+        <option value="windows-door">Windows & Door</option>
+        <option value="roofing-replace">Roofing Replace</option>
+      </select>
     </div>
     <button type="submit" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Submit</button>
-  </form>
+</form>
 </div>

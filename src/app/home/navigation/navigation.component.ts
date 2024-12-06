@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './navigation.component.scss'
 })
 export class NavigationComponent {
-  scrollTo(section: string) {
-    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }
