@@ -4,9 +4,9 @@ export default {
   inlineCriticalCss: true,
   routes: undefined,
   assets: new Map([
-['index.csr.html', {size: 4196, hash: 'a6d45c85706a0673facbb6afa06de7bdded2d98d57bc4d97f13b47de73557c6b', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)}], 
-['index.server.html', {size: 1973, hash: 'f3fb382d66631108a33a8f8a476567d421704ad012c5fcd2c5e2088636c9780d', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)}], 
-['styles-JUGAZ4YJ.css', {size: 267531, hash: 'm/SfHTKgVic', text: () => import('./assets-chunks/styles-JUGAZ4YJ_css.mjs').then(m => m.default)}]
+['index.csr.html', {size: 4247, hash: '75610d4ab127007f05b8e5181304f9e6843d934c8d6ecda7656eed0e8135d4d5', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)}], 
+['index.server.html', {size: 2024, hash: '89dec1a2f7cfed9f8799a18791f459131853b6b92dd5df331105470109fe0335', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)}], 
+['styles-25KOCFMG.css', {size: 278602, hash: 'R7s08R9gdJk', text: () => import('./assets-chunks/styles-25KOCFMG_css.mjs').then(m => m.default)}]
 ]),
   locale: undefined,
 };
