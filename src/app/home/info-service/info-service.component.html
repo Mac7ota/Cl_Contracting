@@ -13,11 +13,11 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible1">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(2)">
       <summary>
-        <img src="img/decks/two.jpg" height="400" width="300" alt="Decks" />
+        <img src="img/decks/on.jpg" height="400" width="300" alt="Decks" />
       </summary>
       <div class="content">
         <p>Decks</p>
@@ -26,11 +26,11 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible2">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(3)">
       <summary>
-        <img src="img/paitings/four.jpg" height="400" width="300" alt="Paitings" />
+        <img src="img/paitings/three.jpg" height="400" width="300" alt="Paitings" />
       </summary>
       <div class="content">
         <p>Paitings</p>
@@ -39,11 +39,11 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible3">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(4)">
       <summary>
-        <img src="img/sidings/eit.jpg" height="400" width="300" alt="Sidings" />
+        <img src="img/sidings/nine.jpg" height="400" width="300" alt="Sidings" />
       </summary>
       <div class="content">
         <p> Sidings </p>
@@ -52,11 +52,11 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible4">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(5)">
       <summary>
-        <img src="img/stairs/nine.jpg" height="400" width="300" alt="Stairs" />
+        <img src="img/stairs/eit.jpg" height="400" width="300" alt="Stairs" />
       </summary>
       <div class="content">
         <p> Stairs </p>
@@ -65,11 +65,11 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible5">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(6)">
       <summary>
-        <img src="img/windows-door/five.jpg" height="400" width="300" alt="Windows & Door" />
+        <img src="img/windows-door/three.jpg" height="400" width="300" alt="Windows & Door" />
       </summary>
       <div class="content">
         <p> Windows & Door </p>
@@ -78,7 +78,7 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible6">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
     <details name="image" (click)="alterInfo(7)">
       <summary>
@@ -91,7 +91,7 @@
     <div class="contentInfo" *ngIf="title != '' && description != '' && isVisible7">
       <h2>{{title}}</h2>
       <p>{{description}}</p>
-      <a href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
+      <a (click)="scrollToSection($event, 'form-section')" href="#form-section" style="background-color: #3db1c0; border: #3db1c0;" class="btn btn-primary">Request Free Estimate</a>
     </div>
   </main>
 </div>
